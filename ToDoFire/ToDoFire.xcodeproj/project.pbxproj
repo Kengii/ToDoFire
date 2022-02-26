@@ -17,6 +17,8 @@
 		7F429D4527C9572500019290 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F429D4427C9572500019290 /* GoogleService-Info.plist */; };
 		7F429D4827C9587300019290 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 7F429D4727C9587300019290 /* FirebaseAuth */; };
 		7F429D4A27C9587300019290 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 7F429D4927C9587300019290 /* FirebaseDatabase */; };
+		7F85290427CA74CF0095FE12 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85290327CA74CF0095FE12 /* Task.swift */; };
+		7F85290627CA74DD0095FE12 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85290527CA74DD0095FE12 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		7F429D3827C94BC900019290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
 		7F429D4027C951DD00019290 /* TasksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksVC.swift; sourceTree = "<group>"; };
 		7F429D4427C9572500019290 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7F85290327CA74CF0095FE12 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		7F85290527CA74DD0095FE12 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		7F429D2927C94BC800019290 /* ToDoFire */ = {
 			isa = PBXGroup;
 			children = (
+				7F85290727CA74E50095FE12 /* Model */,
 				7F429D4327C9527300019290 /* Controllers */,
 				7F429D4227C9525800019290 /* Supporting files */,
 			);
@@ -91,6 +96,15 @@
 				7F429D4027C951DD00019290 /* TasksVC.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7F85290727CA74E50095FE12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F85290327CA74CF0095FE12 /* Task.swift */,
+				7F85290527CA74DD0095FE12 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +188,8 @@
 			files = (
 				7F429D2F27C94BC800019290 /* LoginVC.swift in Sources */,
 				7F429D2B27C94BC800019290 /* AppDelegate.swift in Sources */,
+				7F85290627CA74DD0095FE12 /* User.swift in Sources */,
+				7F85290427CA74CF0095FE12 /* Task.swift in Sources */,
 				7F429D2D27C94BC800019290 /* SceneDelegate.swift in Sources */,
 				7F429D4127C951DD00019290 /* TasksVC.swift in Sources */,
 			);

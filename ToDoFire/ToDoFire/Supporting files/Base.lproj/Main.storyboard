@@ -69,7 +69,6 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7yH-Z9-xJc"/>
-                                                    <segue destination="tEc-wx-g5C" kind="show" id="HQQ-8H-8Kz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6F-rB-Kx3">
@@ -111,7 +110,8 @@
                     <connections>
                         <outlet property="emailTaxtField" destination="uYp-9d-vhR" id="lgU-wz-qFQ"/>
                         <outlet property="passwordTextField" destination="ucv-Ob-puf" id="dhp-S3-Ebc"/>
-                        <outlet property="warningLable" destination="d5k-Gj-P3o" id="sIu-cF-L1a"/>
+                        <outlet property="warningLabel" destination="d5k-Gj-P3o" id="sIu-cF-L1a"/>
+                        <segue destination="tEc-wx-g5C" kind="show" identifier="TasksSegue" id="dve-aV-Oac"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -127,7 +127,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Hvf-S9-Z14">
-                                <rect key="frame" x="0.0" y="-32" width="428" height="904"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                                 <color key="backgroundColor" red="0.20392158630000001" green="0.47058826679999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -152,11 +152,17 @@
                         <constraints>
                             <constraint firstItem="Hvf-S9-Z14" firstAttribute="trailing" secondItem="pFw-5R-GA2" secondAttribute="trailing" id="40f-G3-hog"/>
                             <constraint firstAttribute="bottom" secondItem="Hvf-S9-Z14" secondAttribute="bottom" id="DTf-oj-lVI"/>
-                            <constraint firstItem="Hvf-S9-Z14" firstAttribute="top" secondItem="pFw-5R-GA2" secondAttribute="top" constant="-88" id="mVC-Vn-PhY"/>
+                            <constraint firstItem="Hvf-S9-Z14" firstAttribute="top" secondItem="pFw-5R-GA2" secondAttribute="top" constant="-56" id="mVC-Vn-PhY"/>
                             <constraint firstItem="Hvf-S9-Z14" firstAttribute="leading" secondItem="pFw-5R-GA2" secondAttribute="leading" id="zFT-g9-m88"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="apS-sR-PGO">
+                        <barButtonItem key="leftBarButtonItem" title="Sign out" id="utW-x1-c9s">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="signOutTapped:" destination="9wG-fS-Cph" id="dgW-Hv-Hdj"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AbY-bT-C0h">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -170,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0B-6c-IPU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678" y="67"/>
+            <point key="canvasLocation" x="1676.6355140186915" y="66.738660907127439"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Puh-AF-FSV">
